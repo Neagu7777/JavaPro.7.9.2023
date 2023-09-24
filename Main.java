@@ -2,10 +2,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    public Main() {
-
-    }
-
     public static void main(String[] args) {
         MessagePrinter messagePrinter = new MessagePrinter();
         Scanner scanner = new Scanner(System.in);
@@ -18,10 +14,8 @@ public class Main {
         Game game = new Game(messagePrinter, scanner);
         game.start(field);
 
-
     }
-}
-/*
+}/*
  1 уровень сложности: Улучшить наш морской бой
 1) Все числа в классе FieldGenerator вынести,
 как private final static переменные (константы) прямо в этом классе
